@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Astrid JONATHAN">
+    <meta name="author" content="Astrid JONATHAN">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+
+    <title>Contactez moi</title>
+    
+                 <!-- animate css -->
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+                <!-- Font Awesome -->
+                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+                <!-- Bootstrap core CSS -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                    crossorigin="anonymous">
+                <!-- Material Design Bootstrap -->
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+                 <!-- Mon CSS -->
+                <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row navbar-dark bg-dark justify-content-center ">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">Astrid JONATHAN</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">A Propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contact.html">Contact <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container bg-white text-dark justify-content-center ">
+                <h1 class="text-center mt-4">Contactez-moi</h1>
+                <div class="container mt-4">
+                        <div class="row ">
+        
+                                <div class="col justify-content-center">
+                                        <h2>Astrid JONATHAN</h2>
+                                        <p><i class="fa fa-envelope" aria-hidden="true">  </i> astrid.jonathan@gmail.com</p>
+                                          
+                                        <p><i class="fa fa-phone" aria-hidden="true"> </i> 0690306017</p>
+                                       
+                                        <p>
+                                            Route de Campry <br>
+                                            97123 Baillif <br>
+                                            Guadeloupe <br>
+                                        </p>
+                                    </div>
+                            <div class="col justify-content-center">
+                                    <div class="map-responsive">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.82967868981!2d-61.732977669134556!3d16.02237943207801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c136024df60b5ed%3A0x823ed4c3714162c1!2sChemin%20de%20Campry%2C%20Baillif!5e0!3m2!1sfr!2sgp!4v1568662075506!5m2!1sfr!2sgp" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                         </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+        
+        
+        
+
+
+            <form id="formContact" class="" action="traitement.php" method="GET">
+                
+                <fieldset class="pl-4 pr-4 mb-4" >
+                    <div class=" row form-group">
+                        <div class="col-lg-6">
+                            <label for="Nom"></label>
+                            <input type="text" class="form-control" id="nom" placeholder="Votre Nom">
+                            <div class="invalid-feedback">
+                                Entrez votre nom
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="Prénom"></label>
+                            <input type="text" class="form-control" id="prenom" placeholder="Votre Prénom">
+                            <div class="invalid-feedback">
+                                Entrez votre prénom
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" row form-group">
+                        <div class="col-lg-6">
+                            <label for="Email"></label>
+                            <input type="email" class="form-control" id="email" placeholder="Votre email">
+                            <div class="invalid-feedback">
+                                Entrez votre email
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="tel"></label>
+                            <input type="tel" class="form-control" id="tel" placeholder="Votre numéro de Téléphone">
+                            <div class="invalid-feedback">
+                                Entrez votre numéro de téléphone
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row form-group">
+                        <div class="col-sm-12">
+                            <label for="Sujet"></label>
+                            <input type="text" class="form-control" id="sujet" placeholder="Intitulé de votre message">
+                            <div class="invalid-feedback">
+                                Entrez un sujet
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                            <div class="col-lg-4">Votre demande concerne: </div>
+                            <div class="col-lg-8">
+                              <div class="form-check form-check-inline required">
+                                <input class="form-check-input" type="checkbox" id="js">
+                                <label class="form-check-label" for="js">
+                                 Javascript
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="htmlCss">
+                                <label class="form-check-label" for="htmlCss">
+                                 HTML & CSS
+                                </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="jQuery">
+                                <label class="form-check-label" for="jQuery">
+                                jQuery
+                                </label>
+                              </div>
+                            
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="angular">
+                                <label class="form-check-label" for="angular">
+                                Angular
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+
+                    <div class="row form-group">
+                        <div class="col-lg-12">
+                            <label for="message"></label>
+                            <textarea type="text" rows="5" class="form-control" id="message"
+                                placeholder="Votre message"></textarea>
+                            <div class="invalid-feedback">
+                                Entrez un contenu
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row form-group mx-auto">
+                            <button type="submit" class="btn btn-primary" id="submit">Envoyer votre demande</button>
+                    </div>
+
+                </fieldset>
+            </form>
+
+            
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <!-- Script Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Script Jquery Toujours avant mon script JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Integrity sert à securiser si modifier bloque l'accès au script -->
+
+    <!-- Script JS -->
+    <script src="./js/contact.js"></script>
+
+</body>
+
+</html>
