@@ -13,54 +13,59 @@
     
                  <!-- animate css -->
                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-                <!-- Font Awesome -->
+                
+                   <!-- Googlefonts-->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+
+                 <!-- Font Awesome -->
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
                 <!-- Bootstrap core CSS -->
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
                     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
                     crossorigin="anonymous">
-                <!-- Material Design Bootstrap -->
                 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
                  <!-- Mon CSS -->
                 <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="row navbar-dark bg-dark justify-content-center ">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#">Astrid JONATHAN</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item ">
-                                <a class="nav-link" href="index.html">A Propos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="contact.html">Contact <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </nav>
+<header>
+    <div class="container-fluid">
+              
+        <nav class="navbar navbar-dark bgblack navbar-expand-lg ">
+            
+            <a class="navbar-brand  justify-content-startmL-4" href="index.html"><img src="./img/Logo_AJ.png" alt="logo" width="300px" height="200px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse  justify-content-end m-4 " id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">A Propos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+            
+                </ul>
             </div>
-        </div>
-    </header>
+        </nav>
+                
+    </div>
+</header>
     <main>
         <div class="container bg-white text-dark justify-content-center ">
                 <h1 class="text-center mt-4">Contactez-moi</h1>
                 <div class="container mt-4">
                         <div class="row ">
         
-                                <div class="col justify-content-center">
+                                <div class="col align-middle">
                                         <h2>Astrid JONATHAN</h2>
                                         <p><i class="fa fa-envelope" aria-hidden="true">  </i> astrid.jonathan@gmail.com</p>
                                           
@@ -85,9 +90,9 @@
         
 
 
-            <form id="formContact" class="" action="traitement.php" method="GET">
+            <form id="formContact" class="mb-4" action="traitement.php" method="GET">
                 
-                <fieldset class="pl-4 pr-4 mb-4" >
+                <fieldset class="border border-secondary rounded px-4 mb-4" >
                     <div class=" row form-group">
                         <div class="col-lg-6">
                             <label for="Nom"></label>
@@ -120,20 +125,25 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="row form-group">
-                        <div class="col-sm-12">
-                            <label for="Sujet"></label>
-                            <input type="text" class="form-control" id="sujet" placeholder="Intitulé de votre message">
-                            <div class="invalid-feedback">
-                                Entrez un sujet
-                            </div>
+                    <div class="form-group">
+                        <label for="selectForm1">Choisir votre budget</label>
+                        <select class="form-control required" id="selectForm1" >
+                          <option value=''> --A partir de: --</option>
+                          <option value='1'>600€ à 800€</option>
+                          <option value='2'>800€ à 1000€</option>
+                          <option value='3'>1000€ à 1200€</option>
+                          <option value='4'>1200€ à 1500€</option>
+                          <option value='5'> > 1500€</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Veuillez selectionner votre budget
                         </div>
-                    </div>
+                      </div>
+
+                  
                     <div class="form-group row">
-                            <div class="col-lg-4">Votre demande concerne: </div>
-                            <div class="col-lg-8">
+                            <label for="checkForm1" class="col-lg-4">Votre demande concerne: </label>
+                            <div class="col-lg-8 " id="checkForm1">
                               <div class="form-check form-check-inline required">
                                 <input class="form-check-input" type="checkbox" id="js">
                                 <label class="form-check-label" for="js">
@@ -159,9 +169,20 @@
                                 Angular
                                 </label>
                               </div>
+                              <div class="invalid-feedback">
+                                Selectionner le type
+                            </div>
                             </div>
                           </div>
-
+                          <div class="row form-group">
+                                <div class="col-sm-12">
+                                    <label for="Sujet"></label>
+                                    <input type="text" class="form-control" id="sujet" placeholder="Intitulé de votre message">
+                                    <div class="invalid-feedback">
+                                        Entrez un sujet
+                                    </div>
+                                </div>
+                            </div>
                     <div class="row form-group">
                         <div class="col-lg-12">
                             <label for="message"></label>
