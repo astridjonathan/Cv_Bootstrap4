@@ -3,6 +3,10 @@ $(function(){
     $("#formContact").submit(function(e){
         e.preventDefault();
 
+        $("#formContact .alert-danger").remove();
+        $("#formContact .is-invalid").removeClass();
+
+
         const nom = $("#nom");
         const prenom = $("#prenom");
         const email = $("#email");
