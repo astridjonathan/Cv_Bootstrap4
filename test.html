@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+      <!-- Mon CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+        <div id="wrapper">
+                <div id="carousel">
+                    <img src="./img/slider_tech.jpg" alt="c-350x500-1" width="350" height="500" />
+                    <img src="./img/slider_tech.jpg" alt="c-500x350-1" width="500" height="350" />
+                    <img src="./img/slider_tech.jpg" alt="c-400x400" width="400" height="400" />
+                    <img src="./img/slider_tech.jpg" alt="c-350x500-2" width="350" height="500" />
+                    <img src="./img/slider_tech.jpg" alt="c-500x350-2" width="500" height="350" />
+                </div>
+                <a id="prev" href="#"></a>
+                <a id="next" href="#"></a>
+            </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+$(function() {
+	$('#carousel').carouFredSel({
+		items: 1,
+		auto: false,
+		prev: '#prev',
+		next: '#next',
+		scroll: {
+			onBefore: function( data ) {
+				$('#wrapper').animate({
+					width: data.width,
+					height: data.height,
+					marginTop: -(data.height / 2),
+					marginLeft: -(data.width / 2) - 100
+				}, {
+					duration: data.scroll.duration
+				});
+			}
+		}
+	});
+});
+</script>
+
+
+</body>
+</html>

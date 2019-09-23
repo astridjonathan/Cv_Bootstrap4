@@ -1,6 +1,9 @@
+
+
 $(function(){
 
-    $("#formContact").submit(function(e){
+      $('#formContact').submit(function(e){
+        // ---2 Stopper la redirection de la page
         e.preventDefault();
 
         $("#formContact .alert-danger").remove();
@@ -46,20 +49,24 @@ $(function(){
         }else {
             $(this).prepend (`
             <div class="alert alert-danger">
-                Nous ne sommes pas en mesure de valider vos informations.
-                </div>
-            `);
-        };
-      
+                Nous n'avons été en mesure de valider votre contact.
+                Vérifiez vos informations.
+            </div>
+        `);
+
+    }
+
 
     });
 
 
+     
 
 
 
 
+     
+     
 
+})
 
-
-});
